@@ -1,13 +1,22 @@
-//document.write("Hello World!");
+//document.alert("Hello World!");
 
-var table = document.getElementById("grid");
+function changeClass(cell){
+    console.log(12);
+}
+
 function init(length) {
-    for (x = 0; x < length; x++){
+   
+    var table = document.getElementById('grid');
+    
+    for (let x = 0; x < length; x++){
         var row = table.insertRow(x);
-        for (x = 0; x < length; x++){
+        for (let y = 0; y < length; y++){
             var cell = row.insertCell(y);
             cell.innerHTML = String(x) + String(y);
+            cell.addEventListener("click", changeClass(cell)); 
         }
-    }    
+    }
 }
+
 init(5);
+document.getElementById('grid').addEventListener("click", changeClass("")); 
