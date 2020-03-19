@@ -1,7 +1,7 @@
-document.write("Hello World!");
+//document.write("Hello World!");
 
+var table = document.getElementById("grid");
 function init(length) {
-    var table = document.getElementById("grid");
     for (x = 0; x < length; x++){
         var row = table.insertRow(x);
         for (x = 0; x < length; x++){
@@ -10,3 +10,4 @@ function init(length) {
         }
     }    
 }
+init(5);
