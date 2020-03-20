@@ -1,34 +1,25 @@
 //document.write("Hello World!");
-<<<<<<< HEAD
 
 function changeClass(cell){
     //console.log(cell.lastChild.data);
     cell.classList.toggle('wall');
 }
-=======
->>>>>>> 3894086475af96c4f6652004e4f628c9821b1e74
 
-var table = document.getElementById("grid");
 function init(length) {
-<<<<<<< HEAD
     var table = document.getElementById('grid');
     
-    while(table.hasChildNodes())                    // to remove old table if size is changed
+    while(table.hasChildNodes())                    // to remove old table if size is changed (or reset?)
     {
         table.removeChild(table.firstChild);
     }
     
     for (let x = 0; x < length; x++){
-=======
-    for (x = 0; x < length; x++){
->>>>>>> 3894086475af96c4f6652004e4f628c9821b1e74
         var row = table.insertRow(x);
         for (let y = 0; y < length; y++){
             var cell = row.insertCell(y);
             cell.innerHTML = String(x) + String(y);
             //cell.addEventListener("click", changeClass(cell)); 
         }
-<<<<<<< HEAD
     }
     table.addEventListener("click", function(e) {
   if (e.target && e.target.nodeName == "TD") {
@@ -44,8 +35,7 @@ function submitNum(){
     init(Number(num));
 }
 //init(5);
-=======
-    }    
+
+function startSearch(){
+    
 }
-init(5);
->>>>>>> 3894086475af96c4f6652004e4f628c9821b1e74

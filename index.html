@@ -7,17 +7,18 @@
     <title>Pathfinder</title>
 </head>
 <body>
-<<<<<<< HEAD
-    <h5>Choose a size</h5>
-    <input type="number" value="5" id="gridLength"></input>
-    <input type="submit" onclick="submitNum()"></input>
+    <input type="number" value="" placeholder="Selcect a Size" id="gridLength"></input>
+    <button onClick="submitNum()">Reset Grid</button>
+    <br>
+    <select id="boxType">
+        <option value="normal">Normal</option>
+        <option value="start">Start</option>
+        <option value="end">End</option>
+    </select>
+    <br>
+    <button onClick="startSearch()">Start Search</button>
     <table id='grid'>
         
-=======
-    <script src="index.js"></script>
-    
-    <table id = "grid">
->>>>>>> 3894086475af96c4f6652004e4f628c9821b1e74
     </table>
     
     <script src="index.js"></script>
