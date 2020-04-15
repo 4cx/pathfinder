@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pathfinder</title>
 </head>
 <body>
-    <script src="index.js"></script>
-    
-    <table id = "grid">
+    <input type="number" value="" placeholder="Selcect a Size" id="gridLength"></input>
+    <button onClick="submitNum()">Reset Grid</button>
+    <br>
+    <select id="boxType">
+        <option value="normal">Normal</option>
+        <option value="start">Start</option>
+        <option value="end">End</option>
+    </select>
+    <br>
+    <button onClick="startSearch()">Start Search</button>
+    <table id='grid'>
+        
     </table>
+    
+    <script src="index.js"></script>
 </body>
 </html>
