@@ -7,15 +7,16 @@
     <title>Pathfinder</title>
 </head>
 <body>
-    <input type="number" value="" placeholder="Selcect a Size" id="gridLength"></input>
+    <input type="number" value="" placeholder="Selcect a Size" min="1" id="gridLength"></input>
     <button onClick="submitNum()">Reset Grid</button>
     <br>
     <select id="boxType">
-        <option value="normal">Normal</option>
+        <option value="wall">Wall</option>
         <option value="start">Start</option>
         <option value="end">End</option>
     </select>
     <br>
+    <div id="message"></div>
     <button onClick="startSearch()">Start Search</button>
     <table id='grid'>
         

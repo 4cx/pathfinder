@@ -17,9 +17,35 @@ table {
 td:hover {
   background-color: #f5f5f5;
 }
+
+#message {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px
+}
+
 .wall {
   background-color: gray;
 }
 .wall:hover {
   background-color: DarkGray;
+}
+.start {
+  background-color: green;
+}
+.start:hover {
+  background-color: DarkGreen;
+}
+.end {
+  background-color: red;
+}
+.end:hover {
+  background-color: DarkRed;
+}
+.way {
+  background-color: orange;
+}
+.way:hover {
+  background-color: gold;
 }
